@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>Pre-Book a Session</title>
+      <link href="mycss.css" rel="stylesheet"> 
+
+      <!-- Google font link -->
+      <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
+    </head>
+    <body id="page3">
+      <header>
+        <nav>
+            <ul>
+                <li><a href="index_main.html" title="Go to the home page">Home</a></li>
+                <li><a href="about.html" title="Go to the about page">About Us</a></li>
+                <li><a href="order.html" title="Go to the order page">Order</a></li>
+                <li><a href="info.html" title="Go to the info page">More Info</a></li>
+                <li><a href="outlets.html" title="Go to the outlets page">Outlet</a></li>
+                </ul> 
+        </nav>
+        <h1>Brighton Massage n Spa Centre</h1>
+      </header>
+      <main id="content">
+        <h2>Book an Appointment</h2>
+       <img src="man-3653329_640.jpg" alt="order" class="center" height="640" width="426">
+       <form method="GET" action="order.html">
+        <fieldset id="Appoint">
+          <legend>Pre-Book Your Session Here</legend>
+          
+          <div>
+                  <p>Choose your Time and Date</p>
+                  <label for="time">Time</label>
+                  <input type="time" name="time" id="time">
+                  <label for="date">Date</label>
+                  <input type="date" id="date" name="date">
+
+          </div>
+
+          <div>
+              <h2>Choose your Type of Massage</h2>
+              <h2>Express Massage (30 Minutes) </h2>
+              <p>Please Mark Minimum 1 and Maximum 2</p>
+              
+                <p>
+                  <label for="dtm">Deep Tissue Massage -- $23 </label>
+                  <input type="checkbox" name="regmtop[]" id=dtm value="dtm">
+                </p>
+
+                <p>
+                  <label for="thai">Thai Massage -- $26</label>
+                  <input type="checkbox" name="regmtop[]" id="thai" value="thai">
+                </p>
+
+        <p>
+          <label for="ayur">Ayurvedic Massage -- $30</label>
+          <input type="checkbox" name="regmtop[]" id="ayur" value="ayur">
+        </p>
+
+        <p>
+          <label for="Swedish">Swedish Massage -- $34</label>
+          <input type="checkbox" name="regmtop[]" id="Swedish" value="Swedish">
+        </p>
+
+        <p>
+          <label for="bali">Balinese Massage -- $18</label>
+          <input type="checkbox" name="regmtop[]" id="bali" value="bali">
+        </p>
+
+        <p>
+          <label for="head">Indian Head Massage -- $10</label>
+          <input type="checkbox" name="regmtop[]" id="head" value="head">
+        </p>
+
+        <p>
+          <label for="south">South Indian Massage -- $15</label>
+          <input type="checkbox" name="regmtop[]" id="south" value="south">
+        </p>
+
+        <p>
+          <label for="foot">Indian Foot Massage -- $12</label>
+          <input type="checkbox" name="regmtop[]" id="foot" value="foot">
+        </p>
+
+        <p>
+          <label for="full">Indian Full Body Massage -- $40</label>
+          <input type="checkbox" name="regmtop[]" id="full" value="full">
+        </p>
+         </div>
+
+         <h2>Long Duration Massage (40+ Minutes) </h2>
+         <p>Following are Follwed by a short Spa Session, please contact for other details</p>
+         <p>Please Select 1</p>
+         
+           <p>
+             <label for="dtm">Deep Tissue Massage -- $30 (40 Minutes) </label>
+             <input type="radio" name="regmtop[]" id=dtm value="dtm">
+           </p>
+
+           <p>
+             <label for="thai">Thai Massage -- $32 (45 Minutes)</label>
+             <input type="radio" name="regmtop[]" id="thai" value="thai">
+           </p>
+
+   <p>
+     <label for="ayur">Ayurvedic Massage -- $35 (50 Minutes)</label>
+     <input type="radio" name="regmtop[]" id="ayur" value="ayur">
+   </p>
+
+   <p>
+     <label for="Swedish">Swedish Massage -- $38 (40 Minutes)</label>
+     <input type="radio" name="regmtop[]" id="Swedish" value="Swedish">
+   </p>
+
+   <p>
+     <label for="bali">Balinese Massage -- $23 (50 Minutes)</label>
+     <input type="radio" name="regmtop[]" id="bali" value="bali">
+   </p>
+
+   <p>
+     <label for="south">South Indian Massage -- $25 (60 Minutes)</label>
+     <input type="radio" name="regmtop[]" id="south" value="south">
+   </p>
+
+   <p>
+     <label for="full">Indian Full Body Massage -- $50 (90 Minutes)</label>
+     <input type="radio" name="regmtop[]" id="full" value="full">
+   </p>
+
+   <div>
+    <p>Please let us know if you have any Allergies / Other Preferences: </p>
+    <label for="pref">Allergies/Preferences: </label>
+					<textarea name="pref" id="pref"></textarea>
+</div>
+
+          
+          
+          <div> 
+          <p>Choose your Outlet:</p>
+          <h5>Summer Hours of Operation: 8:00 - 20:00</h5>
+          <h5>Winter Hours of Operation: 9:00 - 20:30</h5>    
+          <input type="radio" id="shop1" name="outlet1" value="outlet1">
+          <label for="outlet1">Duckworth St Main Centre
+            490 Duckworth St , Barrie, ON  L4M 7B8
+
+          </label>   
+          <input type="radio" id="shop2" name="outlet2" value="outlet2">
+          <label for="outlet2">Anne Street Centre - Coming Soon !</label>
+          </div>
+
+          <div>
+                  <h4>Spa Session</h4>
+                  <select name="spa" id="spa"> 
+                    <option value="short">Short Session of 15 Minutes -- $20</option>
+                    <option value="short1">Standard 30 Minute Session -- $25</option>
+                    <option value="long">50 Minute Session -- $30</option>
+                  </select> 
+          </div>
+
+      </fieldset>
+
+      <fieldset>
+          <legend>Checkout</legend>
+          <!-- Proceeding for checkout -->
+              <p>We will get back to you (Text Message/Phone Call) for your confirmation or any customizations/ preferences</p> 
+          
+          
+                  <p>Enter your Name and Address</p>
+
+                  <div>
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" id="fname" required maxlength="50">
+                  </div>
+
+                  <div>
+                     <label for="lname">Last Name</label>
+         <input type="text" name="lname" id="lname" required maxlength="50">
+          </div>
+
+         
+
+          <div>
+            <label for="ph">Phone Number</label>
+            <input type="tel" name="ph" id="ph" required>
+          </div>
+
+          <div>
+            <label for="housenum">House/Flat Number</label>
+            <input type="number" name="housenum" id="housenum" required>
+          </div>
+
+          <div>
+            <label for="local">Locality and City</label>
+            <input type="text" name="local" id="local" required>
+          </div>
+
+          <div>
+            <label for="pcode">Postal Code</label>
+            <input type="text" name="pcode" id="pcode" placeholder="6T6T6T" maxlength="6" required>
+          </div>
+
+          <div>
+              <label for="email">E-Mail</label>
+              <input type="text" name="email" id="email" required>
+          </div>
+
+          <div>
+            <p>We have special offers on Birthdays or Anniversaries with couple packages ! Stay tuned</p>
+            <label for="birthday">Birthday</label>
+            <input type="date" id="birthday" name="birthday">
+            <label for="ann">Anniversary</label>
+            <input type="date" id="ann" name="ann">
+          </div>
+
+
+         
+         
+           <div>
+            <p>Select your Province</p>
+            <label for="province">Province</label>
+            <select id="province" name="province">
+              <option value="choose">Select</option>
+              <option value="BC">British Colombia -- Coming Soon ! </option>
+              <option value="ON">Ontario</option>
+            </select>
+          </div>
+          
+          <div>
+          <p>Please Choose your Mode of Payment</p>
+          <label for="pay">Pay By</label>
+            <select id="pay" name="pay">
+              <option value="choose">Choose</option>
+              <option value="cash">Cash</option>
+              <option value="card">Debit/Credit Card</option>
+              </select>
+              <p>If you have chosen mode of payment as card, you will be redirected to a new page</p>
+          </div>
+      </fieldset>
+      <input type="submit" value="Submit">
+      <p><strong>Are you sure you want to reset all ? Clearing the form will erase the details</strong></p>
+      <input type="reset" value="Reset">
+
+      </form>
+      </main>
+      <footer>
+          <p>Don't forget to follow us on Instagram and Facebook @brighton_massage <a href="https://www.instagram.com" title="Go to the Website." rel="external">Instagram</a>
+            <a href="https://www.facebook.com" title="Go to the Website." rel="external">Facebook</a></p>
+
+          <p><strong>For queries, contact toll free number - 1867956029 or email at brighton_massage@bmns.ca</strong></p>
+        <p><small>&copy; For COMP1002 Final Project</small></p>
+      </footer>
+    </body>
+  </html>
